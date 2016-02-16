@@ -264,7 +264,7 @@ megaADK.build.variant=mega
 
 ##############################################################
 
-leonardo.name=Arduino Leonardo
+leonardo.name=Iskra Neo or Arduino Leonardo
 leonardo.vid.0=0x2341
 leonardo.pid.0=0x0036
 leonardo.vid.1=0x2341
@@ -302,6 +302,41 @@ leonardo.build.variant=leonardo
 leonardo.build.extra_flags={build.usb_flags}
 
 ##############################################################
+
+leonardoeth.name=Arduino Leonardo ETH
+leonardoeth.vid.0=0x2a03
+leonardoeth.pid.0=0x0040
+leonardoeth.vid.1=0x2a03
+leonardoeth.pid.1=0x8040
+
+leonardoeth.upload.tool=avrdude
+leonardoeth.upload.protocol=avr109
+leonardoeth.upload.maximum_size=28672
+leonardoeth.upload.maximum_data_size=2560
+leonardoeth.upload.speed=57600
+leonardoeth.upload.disable_flushing=true
+leonardoeth.upload.use_1200bps_touch=true
+leonardoeth.upload.wait_for_upload_port=true
+
+leonardoeth.bootloader.tool=avrdude
+leonardoeth.bootloader.low_fuses=0xff
+leonardoeth.bootloader.high_fuses=0xd8
+leonardoeth.bootloader.extended_fuses=0xcb
+leonardoeth.bootloader.file=caterina/Caterina-LeonardoEthernet.hex
+leonardoeth.bootloader.unlock_bits=0x3F
+leonardoeth.bootloader.lock_bits=0x2F
+
+leonardoeth.build.mcu=atmega32u4
+leonardoeth.build.f_cpu=16000000L
+leonardoeth.build.vid=0x2a03
+leonardoeth.build.pid=0x8040
+leonardoeth.build.usb_product="Arduino Leonardo ETH"
+leonardoeth.build.board=AVR_LEONARDO
+leonardoeth.build.core=arduino
+leonardoeth.build.variant=leonardo
+leonardoeth.build.extra_flags={build.usb_flags}
+
+#############################################################
 
 micro.name=Arduino/Genuino Micro
 
@@ -400,7 +435,7 @@ esplora.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
-mini.name=Arduino Mini
+mini.name=Iskra Mini or Arduino Mini
 
 mini.upload.tool=avrdude
 mini.upload.protocol=arduino
