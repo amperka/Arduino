@@ -12,7 +12,8 @@ DefaultDirName={pf}\Amperka
 DefaultGroupName=Amperka
 Compression=lzma2
 SolidCompression=yes
-OutputDir=userdocs:Inno Setup Examples Output
+OutputDir=.
+OutputBaseFilename=Arduino_setup
 ; "ArchitecturesInstallIn64BitMode=x64" requests that the install be
 ; done in "64-bit mode" on x64, meaning it should use the native
 ; 64-bit Program Files directory and the 64-bit view of the registry.
